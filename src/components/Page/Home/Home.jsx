@@ -53,7 +53,30 @@ const Home = () => {
         </section>
       </div>
 
-      
+      <div>
+        <section className="workpage">
+          <div className="work-content">
+            <h1 className="title4">
+             <span className="highlight">Introducing Our Work</span>
+            </h1>
+            <h5 className="subtitle">
+              Tailoring services for global exporters with personalized attention .
+            </h5>
+            <p className="description">
+              Our creativity is driven by depth study in an effort to give you the best result and position of your product successfully in International market.
+              We're on a mission to start studying the exact market for your products worldwide and establish the product in appropriate market.
+            </p>
+          </div>
+
+          <div className="about-image">
+            <img
+              src="/images/image8.png"
+              alt="Global Trade Visual"
+              className="hero-image"
+            />
+          </div>
+        </section>
+      </div>
     </>
   );
 };
