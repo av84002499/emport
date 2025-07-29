@@ -90,6 +90,8 @@
 }
 
 /* stats-section */
+
+
 .stats-container {
   position: relative;
   background: url('../../../../public/images/image4.png') no-repeat center center;
@@ -99,6 +101,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 20px;
 }
 
 .overlay {
@@ -117,16 +120,8 @@
   justify-content: center;
 }
 
-.stat-box1 {
-  background: #f7e8e8;
-  border-radius: 20px;
-  padding: 30px 25px;
-  width: 200px;
-  text-align: center;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease;
-  margin-bottom: 17vh;
-}
+/* Common styles for both stat boxes */
+.stat-box1,
 .stat-box2 {
   background: #f7e8e8;
   border-radius: 20px;
@@ -135,34 +130,70 @@
   text-align: center;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease;
+}
+
+/* Individual vertical spacing */
+.stat-box1 {
+  margin-bottom: 17vh;
+}
+
+.stat-box2 {
   margin-top: 19vh;
 }
 
-.stat-box:hover {
+/* Hover effect */
+.stat-box1:hover,
+.stat-box2:hover {
   transform: translateY(-8px);
 }
 
-.stat-box img {
+/* Image style */
+.stat-box1 img,
+.stat-box2 img {
   width: 50px;
   margin-bottom: 20px;
 }
 
-.stat-box h2 {
+/* Heading style */
+.stat-box1 h2,
+.stat-box2 h2 {
   margin: 0;
   font-size: 24px;
   color: #000;
 }
 
-.stat-box p {
+/* Paragraph style */
+.stat-box1 p,
+.stat-box2 p {
   margin-top: 10px;
   font-size: 16px;
   font-weight: 500;
   color: #25b6e7;
 }
 
+/* ---------- Responsive Design ---------- */
 @media (max-width: 768px) {
+  .stats-container {
+    height: auto;
+    padding: 40px 20px;
+  }
+
   .stats-section {
     flex-direction: column;
-    gap: 30px;
+    gap: 40px;
+  }
+
+  .stat-box1,
+  .stat-box2 {
+    margin: 0 auto;
+  }
+
+  .stat-box1 {
+    margin-bottom: 20px;
+  }
+
+  .stat-box2 {
+    margin-top: 0;
   }
 }
+
