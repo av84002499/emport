@@ -8,8 +8,8 @@ const Home = () => {
       <section className="home-wrapper">
         <div className="home-content">
           <h1 className="title">
-            <span className="highlight">Trade</span>Link
-            <span className="highlight">Global</span>
+            <span className="highlight">Chaudhary Global Trade</span>
+            
           </h1>
           <h6 className="subtitle">
             Connecting Worlds, Exporting Opportunities!!
