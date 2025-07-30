@@ -1,73 +1,67 @@
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #f3f3f3;
+/* team */
+
+.team-section {
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+  text-align: center;
+  color: #fff;
+  margin-top: 8vh;
 }
 
-.app-container {
+.team-section h2 {
+  font-size: 2.5em;
+  color: #6ee7b7;
+  margin-bottom: 30px;
+}
+
+.team-cards {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
-  height: 100vh;
+  gap: 90px;
 }
 
-.product-card {
-  width: 300px;
-  background-color: #fff;
-  border-radius: 16px;
-  overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  transition: box-shadow 0.3s ease-in-out;
+.card {
+  background: white;
+  color: black;
+  border-radius: 20px;
+  width: 250px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-.product-card:hover {
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
-}
-
-.product-image {
-  width: 100%;
-  height: 200px;
+.card .avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
   object-fit: cover;
+  margin-bottom: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.product-details {
-  padding: 16px;
+.card h3 {
+  margin: 10px 0 5px;
 }
 
-.product-title {
-  font-size: 1.2rem;
-  margin-bottom: 8px;
+.card p {
+  font-weight: 500;
+  color: #555;
+}
+
+.social-icons {
+  margin-top: 15px;
+}
+
+.social-icons i {
+  margin: 0 5px;
+  font-size: 18px;
   color: #333;
+  transition: color 0.3s;
 }
 
-.product-description {
-  font-size: 0.9rem;
-  color: #666;
-  margin-bottom: 12px;
-}
-
-.product-footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.product-price {
-  font-size: 1.1rem;
-  font-weight: bold;
-  color: #4a90e2;
-}
-
-.add-to-cart {
-  background-color: #4a90e2;
-  color: white;
-  border: none;
-  padding: 8px 12px;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background-color 0.2s;
-}
-
-.add-to-cart:hover {
-  background-color: #357ab8;
+.social-icons i:hover {
+  color: #007bff;
 }

@@ -1,6 +1,7 @@
 import React from "react";
 import "./Home.css";
 import Servcs from "../Servics/Servics";
+import Team from "../Team/Team"
 
 const Home = () => {
   return (
@@ -105,62 +106,7 @@ const Home = () => {
         </section>
       </div>
 
-      <section className="team-section">
-        <h2>TEAM</h2>
-        <div className="team-cards">
-          <div className="card">
-            <img
-              src="https://i.ibb.co/yBvDGPY/team-member.jpg"
-              alt="Aryan Kakadiya"
-              className="avatar"
-            />
-            <h3>Aryan Kakadiya</h3>
-            <p>Project Leader</p>
-            <div className="social-icons">
-              <i className="bi bi-twitter"></i>
-              <i className="bi bi-instagram"></i>
-              <i className="bi bi-dribbble"></i>
-              <i className="bi bi-linkedin"></i>
-              <i className="bi bi-github"></i>
-              <i className="bi bi-dev"></i>
-            </div>
-          </div>
-          <div className="card">
-            <img
-              src="https://i.ibb.co/yBvDGPY/team-member.jpg"
-              alt="Aryan Kakadiya"
-              className="avatar"
-            />
-            <h3>Aryan Kakadiya</h3>
-            <p>Project Leader</p>
-            <div className="social-icons">
-              <i className="bi bi-twitter"></i>
-              <i className="bi bi-instagram"></i>
-              <i className="bi bi-dribbble"></i>
-              <i className="bi bi-linkedin"></i>
-              <i className="bi bi-github"></i>
-              <i className="bi bi-dev"></i>
-            </div>
-          </div>
-          <div className="card">
-            <img
-              src="https://i.ibb.co/yBvDGPY/team-member.jpg"
-              alt="Aryan Kakadiya"
-              className="avatar"
-            />
-            <h3>Aryan Kakadiya</h3>
-            <p>Project Leader</p>
-            <div className="social-icons">
-              <i className="bi bi-twitter"></i>
-              <i className="bi bi-instagram"></i>
-              <i className="bi bi-dribbble"></i>
-              <i className="bi bi-linkedin"></i>
-              <i className="bi bi-github"></i>
-              <i className="bi bi-dev"></i>
-            </div>
-          </div>
-        </div>
-      </section>
+      <Team />
 
       <section className="clients-section">
         <h2 className="title">
