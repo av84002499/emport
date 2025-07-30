@@ -7,7 +7,7 @@ import About from "./components/Page/About/About";
 import Team from "./components/Page/Team/Team";
 import Product from './components/Product/Product'
 import Footer from "../src/components/Footer/Footer"
-import Contactus from "../src/components/Page/Contactus/Contactus"
+import Contact from "../src/components/Page/Contact/Contact"
 const App = () => {
   return (
     <div>
@@ -21,7 +21,7 @@ const App = () => {
         <Route path="/About" element={<About />} />
         <Route path="/Team" element={<Team />} />
         <Route path="/Product" element={<Product />} />
-        <Route path="/Contactus" element={<Contactus />} />
+        <Route path="/Contact" element={<Contact />} />
 
       </Routes>
       <Footer />
