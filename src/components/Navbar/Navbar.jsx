@@ -35,7 +35,7 @@ const Navbar = () => {
           Product
         </a>
 
-        <a href="Ourteam" onClick={handleLinkClick}>
+        <a href="Team" onClick={handleLinkClick}>
           Our Team
         </a>
         <a href="ContactUs" onClick={handleLinkClick}>
