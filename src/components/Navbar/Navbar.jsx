@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./Navbar.css";
-import { FaSearch, FaChevronDown, FaBars, FaTimes } from "react-icons/fa";
+import {  FaChevronDown, FaBars, FaTimes } from "react-icons/fa";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -63,7 +63,14 @@ const Navbar = () => {
         </a>
       </div>
 
-      
+      <div className="navbar-right">
+        {/* Desktop Search */}
+       
+
+        <button className="menu-toggle" onClick={() => setMenuOpen(!menuOpen)}>
+          {menuOpen ? <FaTimes /> : <FaBars />}
+        </button>
+      </div>
        <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
       <i className="bi bi-person-circle" style={{ fontSize: "1.5rem" }}></i>
       <span>Login</span>
