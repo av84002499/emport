@@ -5,9 +5,11 @@ import Home from "./components/Page/Home/Home";
 import Servics from "./components/Page/Servics/Servics";
 import About from "./components/Page/About/About";
 import Team from "./components/Page/Team/Team";
-import Product from './components/Product/Product'
-import Footer from "../src/components/Footer/Footer"
-import Contact from "../src/components/Page/Contact/Contact"
+import Product from "./components/Product/Product";
+import Footer from "../src/components/Footer/Footer";
+import Contact from "../src/components/Page/Contact/Contact";
+import Certification from "./components/Page/Certification/Certification";
+import Auth from "./components/Auth/Auth";
 const App = () => {
   return (
     <div>
@@ -22,7 +24,8 @@ const App = () => {
         <Route path="/Team" element={<Team />} />
         <Route path="/Product" element={<Product />} />
         <Route path="/Contact" element={<Contact />} />
-
+        <Route path="/Certification" element={<Certification />} />
+        <Route path="/Auth" element={<Auth />} />
       </Routes>
       <Footer />
     </div>

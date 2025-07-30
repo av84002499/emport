@@ -41,6 +41,7 @@ const Navbar = () => {
         <a href="Contact" onClick={handleLinkClick}>
           Contact Us
         </a>
+        
          <div className="dropdown" onClick={() => toggleDropdown("services2")}>
           <button className="btn">
             Company <FaChevronDown />
@@ -50,15 +51,16 @@ const Navbar = () => {
               <a className="dropdown-item" href="About" onClick={handleLinkClick}>
                 About Us
               </a>
-              <a className="dropdown-item" href="#" onClick={handleLinkClick}>
-                Another action
-              </a>
-              <a className="dropdown-item" href="#" onClick={handleLinkClick}>
-                Something else here
+              <a className="dropdown-item" href="Certification" onClick={handleLinkClick}>
+                Certification
               </a>
             </div>
           )}
+          
         </div>
+         <a href="Auth" onClick={handleLinkClick}>
+           Authentication
+        </a>
       </div>
 
       <div className="navbar-right">
