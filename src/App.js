@@ -5,9 +5,9 @@ import Home from "./components/Page/Home/Home";
 import Servics from "./components/Page/Servics/Servics";
 import About from "./components/Page/About/About";
 import Team from "./components/Page/Team/Team";
-import ContactUs from "./components/Page/ContactUs/ContactUs";
 import Product from './components/Product/Product'
 import Footer from "../src/components/Footer/Footer"
+import Contactus from "./components/Page/Contactus/Contactus"
 const App = () => {
   return (
     <div>
@@ -20,8 +20,8 @@ const App = () => {
         <Route path="/Servics" element={<Servics />} />
         <Route path="/About" element={<About />} />
         <Route path="/Team" element={<Team />} />
-        <Route path="/ContactUs" element={<ContactUs />} />
         <Route path="/Product" element={<Product />} />
+        <Route path="/Contactus" element={<Contactus />} />
 
       </Routes>
       <Footer />

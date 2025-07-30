@@ -1,7 +1,7 @@
 import React from 'react';
-import './ContactUs.css';
+import './Contactus.css';
 
-const ContactUs = () => {
+const Contactus = () => {
   return (
     <div>
       <section className="contact-section">
@@ -48,4 +48,4 @@ const ContactUs = () => {
   );
 };
 
-export default ContactUs;
+export default Contactus;

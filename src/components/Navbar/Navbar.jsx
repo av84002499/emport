@@ -38,7 +38,7 @@ const Navbar = () => {
         <a href="Team" onClick={handleLinkClick}>
           Our Team
         </a>
-        <a href="ContactUs" onClick={handleLinkClick}>
+        <a href="Contactus" onClick={handleLinkClick}>
           Contact Us
         </a>
          <div className="dropdown" onClick={() => toggleDropdown("services2")}>
