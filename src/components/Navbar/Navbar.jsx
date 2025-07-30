@@ -63,17 +63,11 @@ const Navbar = () => {
         </a>
       </div>
 
-      <div className="navbar-right">
-        {/* Desktop Search */}
-        <div className="search-box desktop-search">
-          <FaSearch className="search-icon" />
-          <input type="text" placeholder="Search here..." />
-        </div>
-
-        <button className="menu-toggle" onClick={() => setMenuOpen(!menuOpen)}>
-          {menuOpen ? <FaTimes /> : <FaBars />}
-        </button>
-      </div>
+      
+       <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+      <i className="bi bi-person-circle" style={{ fontSize: "1.5rem" }}></i>
+      <span>Login</span>
+    </div>
     </header>
   );
 };

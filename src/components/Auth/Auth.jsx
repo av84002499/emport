@@ -4,12 +4,14 @@ import "./Auth.css";
 const Auth = () => {
   const [mode, setMode] = useState("signin"); // 'signup', 'signin', 'lost'
   const [form, setForm] = useState({
+    name: "",
     emailOrPhone: "",
     password: "",
   });
 
   const resetForm = () =>
     setForm({
+      name: "",
       emailOrPhone: "",
       password: "",
     });
@@ -17,10 +19,9 @@ const Auth = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    const { emailOrPhone, password } = form;
+    const { name, emailOrPhone, password } = form;
     const trimmedInput = emailOrPhone.trim();
 
-    // Gmail and Phone validation regex
     const isGmail = /^[a-zA-Z0-9._%+-]+@gmail\.com$/.test(trimmedInput);
     const isPhone = /^(\+91)?[6-9]\d{9}$/.test(trimmedInput);
 
@@ -30,7 +31,12 @@ const Auth = () => {
     }
 
     if (!isGmail && !isPhone) {
-      alert("Please enter a valid Gmail address or  phone number.");
+      alert("Please enter a valid Gmail address or phone number.");
+      return;
+    }
+
+    if (mode === "signup" && !name.trim()) {
+      alert("Name is required for signup.");
       return;
     }
 
@@ -40,7 +46,7 @@ const Auth = () => {
     }
 
     if (mode === "signup") {
-      alert(`SIGNUP → ${isGmail ? "Gmail" : "Phone"}: ${trimmedInput}`);
+      alert(`SIGNUP → Name: ${name}, ${isGmail ? "Gmail" : "Phone"}: ${trimmedInput}`);
     } else if (mode === "signin") {
       alert(`SIGNIN → ${isGmail ? "Gmail" : "Phone"}: ${trimmedInput}`);
     } else {
@@ -82,6 +88,16 @@ const Auth = () => {
               ? "Welcome Back"
               : "Reset Password"}
           </h2>
+
+          {mode === "signup" && (
+            <input
+              type="text"
+              placeholder="Full Name"
+              value={form.name}
+              onChange={(e) => setForm({ ...form, name: e.target.value })}
+              required
+            />
+          )}
 
           <input
             type="text"
