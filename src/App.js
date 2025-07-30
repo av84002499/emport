@@ -4,8 +4,10 @@ import Navbar from "./components/Navbar/Navbar";
 import Home from "./components/Page/Home/Home";
 import Servics from "./components/Page/Servics/Servics";
 import About from "./components/Page/About/About";
-import OurTeam from "./components/Page/OurTeam/OurTeam";
+import Ourteam from "./components/Page/Ourteam/Ourteam";
 import ContactUs from "./components/Page/ContactUs/ContactUs";
+import Product from './components/Product/Product'
+import Footer from "../src/components/Footer/Footer"
 const App = () => {
   return (
     <div>
@@ -17,9 +19,12 @@ const App = () => {
         <Route path="/home" element={<Home />} />
         <Route path="/Servics" element={<Servics />} />
         <Route path="/About" element={<About />} />
-        <Route path="/OurTeam" element={<OurTeam />} />
+        <Route path="/Ourteam" element={<Ourteam />} />
         <Route path="/ContactUs" element={<ContactUs />} />
+        <Route path="/Product" element={<Product />} />
+
       </Routes>
+      <Footer />
     </div>
   );
 };

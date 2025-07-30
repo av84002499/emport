@@ -1,0 +1,23 @@
+.productpage {
+  margin-top: -5vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px;
+  background-color: #caf0f8; /* Light blue background like in image */
+  flex-wrap: wrap;
+}
+
+.hover-shadow:hover {
+  transform: translateY(-5px);
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 8px 16px rgba(42, 11, 218, 0.15);
+}
+
+.card-title {
+  color: #1f22c4;
+}
+
+.card-text {
+  line-height: 1.5;
+}

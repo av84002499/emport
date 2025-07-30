@@ -31,11 +31,11 @@ const Navbar = () => {
           Home
         </a>
 
-        <a href="Servics" onClick={handleLinkClick}>
+        <a href="Product" onClick={handleLinkClick}>
           Product
         </a>
 
-        <a href="OurTeam" onClick={handleLinkClick}>
+        <a href="Ourteam" onClick={handleLinkClick}>
           Our Team
         </a>
         <a href="ContactUs" onClick={handleLinkClick}>

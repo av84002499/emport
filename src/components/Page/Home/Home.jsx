@@ -57,14 +57,18 @@ const Home = () => {
         <section className="workpage">
           <div className="work-content">
             <h1 className="title4">
-             <span className="highlight">Introducing Our Work</span>
+              <span className="highlight">Introducing Our Work</span>
             </h1>
             <h5 className="subtitle">
-              Tailoring services for global exporters with personalized attention .
+              Tailoring services for global exporters with personalized
+              attention .
             </h5>
             <p className="description">
-              Our creativity is driven by depth study in an effort to give you the best result and position of your product successfully in International market.
-              We're on a mission to start studying the exact market for your products worldwide and establish the product in appropriate market.
+              Our creativity is driven by depth study in an effort to give you
+              the best result and position of your product successfully in
+              International market. We're on a mission to start studying the
+              exact market for your products worldwide and establish the product
+              in appropriate market.
             </p>
           </div>
 
@@ -77,6 +81,84 @@ const Home = () => {
           </div>
         </section>
       </div>
+
+      <section className="team-section">
+        <h2>TEAM</h2>
+        <div className="team-cards">
+          <div className="card">
+            <img
+              src="https://i.ibb.co/yBvDGPY/team-member.jpg"
+              alt="Aryan Kakadiya"
+              className="avatar"
+            />
+            <h3>Aryan Kakadiya</h3>
+            <p>Project Leader</p>
+            <div className="social-icons">
+              <i className="bi bi-twitter"></i>
+              <i className="bi bi-instagram"></i>
+              <i className="bi bi-dribbble"></i>
+              <i className="bi bi-linkedin"></i>
+              <i className="bi bi-github"></i>
+              <i className="bi bi-dev"></i>
+            </div>
+          </div>
+          <div className="card">
+            <img
+              src="https://i.ibb.co/yBvDGPY/team-member.jpg"
+              alt="Aryan Kakadiya"
+              className="avatar"
+            />
+            <h3>Aryan Kakadiya</h3>
+            <p>Project Leader</p>
+            <div className="social-icons">
+              <i className="bi bi-twitter"></i>
+              <i className="bi bi-instagram"></i>
+              <i className="bi bi-dribbble"></i>
+              <i className="bi bi-linkedin"></i>
+              <i className="bi bi-github"></i>
+              <i className="bi bi-dev"></i>
+            </div>
+          </div>
+          <div className="card">
+            <img
+              src="https://i.ibb.co/yBvDGPY/team-member.jpg"
+              alt="Aryan Kakadiya"
+              className="avatar"
+            />
+            <h3>Aryan Kakadiya</h3>
+            <p>Project Leader</p>
+            <div className="social-icons">
+              <i className="bi bi-twitter"></i>
+              <i className="bi bi-instagram"></i>
+              <i className="bi bi-dribbble"></i>
+              <i className="bi bi-linkedin"></i>
+              <i className="bi bi-github"></i>
+              <i className="bi bi-dev"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="clients-section">
+        <h2 className="title">
+          “<span>Our clients</span>”
+        </h2>
+
+        <div className="stats">
+          <div className="stat">
+            <span className="number">50+</span>
+            Happy Customers
+          </div>
+          <div className="stat">
+            <span className="number">20+</span>
+            Partners
+          </div>
+          <div className="stat">
+            <span className="number">10+</span>
+            Collaborations
+          </div>
+        </div>
+      </section>
     </>
   );
 };

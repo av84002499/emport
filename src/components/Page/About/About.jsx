@@ -1,9 +1,18 @@
-import React from 'react'
-import "./About.css"
+import React from 'react';
+import './About.css';
+
 const About = () => {
   return (
     <div>
-            <section className="aboutpage">
+      <section className="aboutpage">
+        <div className="about-image">
+          <img
+            src="/images/image3.png"
+            alt="Global Trade Visual"
+            className="hero-image"
+          />
+        </div>
+
         <div className="about-content">
           <h1 className="title3">
             About <span className="highlight">TradeLinkGlobal</span>
@@ -18,17 +27,9 @@ const About = () => {
             world.
           </p>
         </div>
-
-        <div className="about-image">
-          <img
-            src="/images/image3.png"
-            alt="Global Trade Visual"
-            className="hero-image"
-          />
-        </div>
       </section>
     </div>
-  )
-}
+  );
+};
 
-export default About
+export default About;

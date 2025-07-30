@@ -5,7 +5,7 @@
   justify-content: space-between;
   padding: 60px 80px;
   background-color: #8fd4f7;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   min-height: 100vh;
   padding-top: 100px;
 }
@@ -67,7 +67,6 @@
   height: auto;
 }
 
-
 @media (max-width: 768px) {
   .home-wrapper {
     flex-direction: column;
@@ -78,7 +77,8 @@
     margin-top: 09vh;
   }
 
-  .home-content, .image-section {
+  .home-content,
+  .image-section {
     text-align: center;
     margin-top: 20px;
   }
@@ -91,12 +91,12 @@
 
 /* stats-section */
 
-
 .stats-container {
   position: relative;
-  background: url('../../../../public/images/image4.png') no-repeat center center;
+  background: url("../../../../public/images/image4.png") no-repeat center
+    center;
   background-size: cover;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: "Segoe UI", sans-serif;
   height: 100vh;
   display: flex;
   align-items: center;
@@ -217,11 +217,11 @@
 .title4 {
   font-size: 2.5rem;
   font-weight: bold;
-  color: #023E8A;
+  color: #023e8a;
 }
 
 .highlight {
-  color: #0077B6;
+  color: #0077b6;
 }
 
 .subtitle {
@@ -281,4 +281,142 @@
   .hero-image {
     max-width: 90%;
   }
+}
+
+/* team */
+
+.team-section {
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+  text-align: center;
+  color: #fff;
+}
+
+.team-section h2 {
+  font-size: 2.5em;
+  color: #6ee7b7;
+  margin-bottom: 30px;
+}
+
+.team-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 90px;
+}
+
+.card {
+  background: white;
+  color: black;
+  border-radius: 20px;
+  width: 250px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card .avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card h3 {
+  margin: 10px 0 5px;
+}
+
+.card p {
+  font-weight: 500;
+  color: #555;
+}
+
+.social-icons {
+  margin-top: 15px;
+}
+
+.social-icons i {
+  margin: 0 5px;
+  font-size: 18px;
+  color: #333;
+  transition: color 0.3s;
+}
+
+.social-icons i:hover {
+  color: #007bff;
+}
+
+/* clients */
+
+.clients-section {
+  padding: 60px 20px;
+  background: url("../../../../public/images/image9.png") no-repeat center
+    center/cover;
+  color: white;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  background-color: #03045e;
+}
+
+/* Optional dark overlay */
+.clients-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5); /* adjust for contrast */
+  z-index: 0;
+}
+
+.clients-section > * {
+  position: relative;
+  z-index: 1;
+}
+
+.title {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.title span {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.stats {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 50px;
+  flex-wrap: wrap;
+}
+
+.stat {
+  font-size: 24px;
+}
+
+.stat .number {
+  color: #00d4ff;
+  font-weight: bold;
+  font-size: 30px;
+  display: block;
+}
+
+.logos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 20px;
+  background: #fff;
+}
+
+.logos img {
+  height: 40px;
+  object-fit: contain;
 }
