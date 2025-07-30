@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./Navbar.css";
-import {  FaChevronDown, FaBars, FaTimes } from "react-icons/fa";
+import { FaChevronDown, FaBars, FaTimes } from "react-icons/fa";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -41,40 +41,46 @@ const Navbar = () => {
         <a href="Contact" onClick={handleLinkClick}>
           Contact Us
         </a>
-        
-         <div className="dropdown" onClick={() => toggleDropdown("services2")}>
+
+        <div className="dropdown" onClick={() => toggleDropdown("services2")}>
           <button className="btn">
             Company <FaChevronDown />
           </button>
           {activeDropdown === "services2" && (
             <div className="dropdown-menu show">
-              <a className="dropdown-item" href="About" onClick={handleLinkClick}>
+              <a
+                className="dropdown-item"
+                href="About"
+                onClick={handleLinkClick}
+              >
                 About Us
               </a>
-              <a className="dropdown-item" href="Certification" onClick={handleLinkClick}>
+              <a
+                className="dropdown-item"
+                href="Certification"
+                onClick={handleLinkClick}
+              >
                 Certification
               </a>
             </div>
           )}
-          
         </div>
-         <a href="Auth" onClick={handleLinkClick}>
-           Authentication
+        <a href="Auth" onClick={handleLinkClick}>
+          Authentication
         </a>
       </div>
 
       <div className="navbar-right">
         {/* Desktop Search */}
-       
+        <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+          <i className="bi bi-person-circle" style={{ fontSize: "1.5rem" }}></i>
+          <span>Login</span>
+        </div>
 
         <button className="menu-toggle" onClick={() => setMenuOpen(!menuOpen)}>
           {menuOpen ? <FaTimes /> : <FaBars />}
         </button>
       </div>
-       <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
-      <i className="bi bi-person-circle" style={{ fontSize: "1.5rem" }}></i>
-      <span>Login</span>
-    </div>
     </header>
   );
 };
