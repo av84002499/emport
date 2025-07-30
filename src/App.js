@@ -7,7 +7,7 @@ import About from "./components/Page/About/About";
 import Team from "./components/Page/Team/Team";
 import Product from './components/Product/Product'
 import Footer from "../src/components/Footer/Footer"
-import Contactus from "./components/Page/Contactus/Contactus"
+import Contactus from "../src/components/Page/Contactus/Contactus"
 const App = () => {
   return (
     <div>
