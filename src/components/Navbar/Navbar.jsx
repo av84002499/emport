@@ -65,17 +65,23 @@ const Navbar = () => {
             </div>
           )}
         </div>
-        <a href="Auth" onClick={handleLinkClick}>
-          Authentication
-        </a>
       </div>
 
       <div className="navbar-right">
         {/* Desktop Search */}
-        <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
-          <i className="bi bi-person-circle" style={{ fontSize: "1.5rem" }}></i>
-          <span>Login</span>
-        </div>
+        <a
+          href="Auth"
+          onClick={handleLinkClick}
+          style={{ textDecoration: "none", color: "inherit" }}
+        >
+          <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+            <i
+              className="bi bi-person-circle"
+              style={{ fontSize: "1.5rem" }}
+            ></i>
+            <span>Login</span>
+          </div>
+        </a>
 
         <button className="menu-toggle" onClick={() => setMenuOpen(!menuOpen)}>
           {menuOpen ? <FaTimes /> : <FaBars />}

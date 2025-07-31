@@ -9,7 +9,7 @@ const Home = () => {
       <section className="home-wrapper">
         <div className="home-content">
           <h1 className="title">
-            <span className="highlight">Chaudhary Global Trade</span>
+            <span className="highlight">Patel Global Trade</span>
           </h1>
           <h6 className="subtitle">
             Connecting Worlds, Exporting Opportunities!!
@@ -42,7 +42,7 @@ const Home = () => {
 
         <div className="about-content">
           <h1 className="title3">
-            About <span className="highlight">TradeLinkGlobal</span>
+            About <span className="highlight">Patel Global Trade</span>
           </h1>
           <h5 className="subtitle">
             Insights and Resources to help drive your Business Forward Faster.
