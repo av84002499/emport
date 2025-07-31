@@ -17,7 +17,6 @@ const Home = () => {
           <p className="description">
             Boost global business with our highly recommended trading company.
           </p>
-          <button className="learn-more-btn">Learn More</button>
         </div>
 
         <div className="image-section">

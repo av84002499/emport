@@ -83,7 +83,7 @@ const Services = () => {
                 <div className="card-content">
                   <h3>{service.title}</h3>
                   <p>{service.description}</p>
-                  <a href="#" className="read-more-btn">
+                  <a href="http://localhost:3000/Product" className="read-more-btn">
                     Read more →
                   </a>
                 </div>
